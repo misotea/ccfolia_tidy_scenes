@@ -22,6 +22,12 @@ document.addEventListener('keydown', event => {
                     grandParent.style.backgroundColor = 'red';
                 }
             }
+            if (value.endsWith('__$blue')) {
+                const grandParent = scenes.parentElement?.parentElement;
+                if (grandParent) {
+                    grandParent.style.backgroundColor = 'blue';
+                }
+            }
         })
     }
 });
